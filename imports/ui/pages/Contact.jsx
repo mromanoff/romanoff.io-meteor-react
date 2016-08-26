@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import {insert} from '../../api/methods.js';
 
 export default class Contact extends Component {

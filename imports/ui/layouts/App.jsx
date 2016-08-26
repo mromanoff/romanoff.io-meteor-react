@@ -8,6 +8,8 @@ import {Session} from 'meteor/session'; // XXX: SESSION
 //import ConnectionNotification from '../components/ConnectionNotification.jsx';
 //import Loading from '../components/Loading.jsx';
 
+import { Link } from 'react-router'
+
 export default class App extends React.Component {
 
     render() {
@@ -30,10 +32,18 @@ export default class App extends React.Component {
                     </h1>
                     <nav className="header__navigation">
                         <ul className="header__links" data-target="header-links">
-                            <li className="header__link "><a href="/">Overview</a></li>
-                            <li className="header__link header__link--active"><a href="/work">Work</a></li>
-                            <li className="header__link "><a href="/photography">Photography</a></li>
-                            <li className="header__link "><a href="/contact">Contact</a></li>
+                            <li className="header__link">
+                                <Link to="/" activeClassName="is-active">Overview</Link>
+                            </li>
+                            <li className="header__link">
+                                <Link to="/work" activeClassName="is-active">Work</Link>
+                            </li>
+                            <li className="header__link ">
+                                <Link to="/photography" activeClassName="is-active">Photography</Link>
+                            </li>
+                            <li className="header__link ">
+                                <Link to="/contact" activeClassName="is-active">Contact</Link>
+                            </li>
                         </ul>
                     </nav>
                 </header>
