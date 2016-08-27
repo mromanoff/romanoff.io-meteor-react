@@ -44,6 +44,9 @@ export default class App extends React.Component {
                             <li className="header__link ">
                                 <Link to="/contact" activeClassName="is-active">Contact</Link>
                             </li>
+                            <li className="header__link ">
+                                <Link to="/admin/contacts" activeClassName="is-active">Contact Entries</Link>
+                            </li>
                         </ul>
                     </nav>
                 </header>

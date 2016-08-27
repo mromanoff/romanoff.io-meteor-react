@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Overview extends Component {
+export default class OverviewPage extends Component {
     constructor(props) {
         super(props);
     }

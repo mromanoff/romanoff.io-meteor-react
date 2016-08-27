@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {insert} from '../../api/methods.js';
 
-export default class Contact extends Component {
+export default class ContactPage extends Component {
     constructor(props) {
         super(props);
         this.addContact = this.addContact.bind(this)

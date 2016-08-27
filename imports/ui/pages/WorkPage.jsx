@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Work extends Component {
+export default class WorkPage extends Component {
     constructor(props) {
         super(props);
     }
