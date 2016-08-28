@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import {insert} from '../../api/methods.js';
 
 export default class ContactPage extends Component {
@@ -10,15 +11,20 @@ export default class ContactPage extends Component {
     addContact(event) {
         event.preventDefault();
 
-        var firstName = this.refs.firstName.value.trim();
-        var lastName = this.refs.lastName.value.trim();
-        var email = this.refs.email.value.trim();
+        var firstName = ReactDOM.findDOMNode(this.refs.firstName).value.trim();
+        var lastName = ReactDOM.findDOMNode(this.refs.lastName).value.trim();
+        var email = ReactDOM.findDOMNode(this.refs.email).value.trim();
 
         insert.call({
             firstName: firstName,
             lastName: lastName,
             email: email
-        })
+        });
+
+        // Clear form
+        ReactDOM.findDOMNode(this.refs.firstName).value = '';
+        ReactDOM.findDOMNode(this.refs.lastName).value = '';
+        ReactDOM.findDOMNode(this.refs.email).value = '';
     }
 
     render() {
