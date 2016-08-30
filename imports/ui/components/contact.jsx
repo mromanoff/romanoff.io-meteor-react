@@ -1,11 +1,9 @@
-import React, { Component, PropTypes} from 'react';
-
-import { Contacts } from '../../api/contacts.js';
+import React, {Component, PropTypes} from 'react';
+import {remove} from '../../api/methods.js';
 
 export default class Contact extends Component {
-
     deleteContact() {
-        Contacts.remove(this.props.contact._id);
+        remove.call({contactId: this.props.contact._id});
     }
 
     render() {
@@ -14,10 +12,10 @@ export default class Contact extends Component {
                 <button className="btn--delete" onClick={this.deleteContact.bind(this)}>
                     &times;
                 </button>
-                First Name:  {this.props.contact.firstName}
-                First Name:  {this.props.contact.lastName}
-                Email:  {this.props.contact.email}
-                Comment:  {this.props.contact.comment}
+                First Name: {this.props.contact.firstName}
+                First Name: {this.props.contact.lastName}
+                Email: {this.props.contact.email}
+                Comment: {this.props.contact.comment}
             </li>
         )
     }

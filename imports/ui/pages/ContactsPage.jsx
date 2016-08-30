@@ -20,14 +20,15 @@ export default class ContactsPage extends Component {
                     <h2 className="title">Total: {contacts.length}</h2>
                     { /* fix this logic */}
                     <section className="module">
-                        {loading ? '<h1>Loading tasks...<h1/>' :
-
+                        {loading ? (
+                            <h1>Loading tasks...</h1>
+                        ) : (
                             <ul className="contacts__list">
                                 {contacts.map((contact) => (
                                     <Contact key={contact._id} contact={contact}/>
                                 ))}
                             </ul>
-
+                        )
                         }
                     </section>
                 </section>

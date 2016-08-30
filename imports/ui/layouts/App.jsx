@@ -8,7 +8,8 @@ import {Session} from 'meteor/session'; // XXX: SESSION
 //import ConnectionNotification from '../components/ConnectionNotification.jsx';
 //import Loading from '../components/Loading.jsx';
 
-import { Link } from 'react-router'
+import {Link} from 'react-router';
+import AccountsUIWrapper from '../containers/AccountsUIWrapper.jsx';
 
 export default class App extends React.Component {
 
@@ -49,6 +50,7 @@ export default class App extends React.Component {
                             </li>
                         </ul>
                     </nav>
+                    <AccountsUIWrapper />
                 </header>
                 {children}
             </div>
