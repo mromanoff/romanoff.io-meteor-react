@@ -1,13 +1,6 @@
-import {Meteor} from 'meteor/meteor';
 import {ValidatedMethod} from 'meteor/mdg:validated-method';
 import {SimpleSchema} from 'meteor/aldeed:simple-schema';
-
 import {Contacts} from './contacts.js';
-
-const CONTACT_ID_ONLY = new SimpleSchema({
-    contactId: {type: String},
-}).validator();
-
 
 export const insert = new ValidatedMethod({
     name: 'contacts.insert',
@@ -27,22 +20,18 @@ export const insert = new ValidatedMethod({
             createdAt: new Date(),
         };
 
-        console.log('contacts', contact);
-
         Contacts.insert(contact);
     }
 });
 
 export const remove = new ValidatedMethod({
     name: 'contacts.remove',
-    validate: CONTACT_ID_ONLY,
-    run({contactId}) {
-        //const contact = Contacts.findOne(contactId);
-        // if (!contact.editableBy(this.userId)) {
-        //     throw new Meteor.Error('lists.remove.accessDenied',
-        //         'You don\'t have permission to remove this list.');
-        // }
 
+    validate: new SimpleSchema({
+        contactId: {type: String},
+    }).validator(),
+
+    run({contactId}) {
         Contacts.remove(contactId);
     }
 });
