@@ -7,25 +7,16 @@
 /**
  * Enable or disable objects as required
  */
-@import 'breakout';
-//@import 'color';
-//@import 'columns';
-@import 'display';
-//@import 'grid';
-//@import 'image-cover';
-//@import 'opacity';
-//@import 'outset';
-@import 'position';
-//@import 'ratio-embed';
-@import 'text';
-@import 'vertical-align';
-@import 'visibility';
-//@import 'width';
+@import "{}/imports/ui/stylesheets/objects/breakout.scss";
+@import "{}/imports/ui/stylesheets/objects/display.scss";
+@import "{}/imports/ui/stylesheets/objects/position.scss";
+@import "{}/imports/ui/stylesheets/objects/text.scss";
+@import "{}/imports/ui/stylesheets/objects/vertical-align.scss";
+@import "{}/imports/ui/stylesheets/objects/visibility.scss";
 
-
-@import 'layout';
-@import "container";
-@import "module";
-@import 'margin';
-@import 'padding';
-@import 'lists';
+@import "{}/imports/ui/stylesheets/objects/layout.scss";
+@import "{}/imports/ui/stylesheets/objects/container.scss";
+@import "{}/imports/ui/stylesheets/objects/module.scss";
+@import "{}/imports/ui/stylesheets/objects/margin.scss";
+@import "{}/imports/ui/stylesheets/objects/padding.scss";
+@import "{}/imports/ui/stylesheets/objects/lists.scss";

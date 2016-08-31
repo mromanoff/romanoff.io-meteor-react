@@ -11,10 +11,6 @@ import ContactsPageContainer from '../../ui/containers/ContactsPageContainer.jsx
 import NotFoundPage from '../../ui/pages/NotFoundPage.jsx';
 
 
-//TODO: find better place for this import
-import '../accounts-config.js';
-
-
 export const renderRoutes = () => (
     <Router history={browserHistory}>
         <Route path="/" component={AppContainer}>

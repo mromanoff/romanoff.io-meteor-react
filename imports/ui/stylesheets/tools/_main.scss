@@ -6,16 +6,8 @@
    Imports
    ========================================================================== */
 
-//@import 'grid-build';
-@import 'media-queries';
-@import 'opacity';
-//@import 'placeholder';
-//@import 'rgba-background';
-//@import 'size';
-//@import 'strip-units';
-//@import 'unit-conversion';
-@import 'transitions';
-
-
-@import "bem";
-@import "mixins";
+@import "{}/imports/ui/stylesheets/tools/media-queries.scss";
+@import "{}/imports/ui/stylesheets/tools/opacity.scss";
+@import "{}/imports/ui/stylesheets/tools/transitions.scss";
+@import "{}/imports/ui/stylesheets/tools/bem.scss";
+@import "{}/imports/ui/stylesheets/tools/mixins.scss";

@@ -6,21 +6,20 @@
    Imports
    ========================================================================== */
 
-@import "header";
-@import "footer";
-//@import "page-title";
-@import "loader";
-@import "buttons";
-@import "pagination";
-@import "gallery";
-@import "comments";
-@import "hero";
-@import "forms";
-@import "alerts";
+@import "{}/imports/ui/stylesheets/components/header.scss";
+@import "{}/imports/ui/stylesheets/components/footer.scss";
+@import "{}/imports/ui/stylesheets/components/loader.scss";
+@import "{}/imports/ui/stylesheets/components/buttons.scss";
+@import "{}/imports/ui/stylesheets/components/pagination.scss";
+@import "{}/imports/ui/stylesheets/components/gallery.scss";
+@import "{}/imports/ui/stylesheets/components/comments.scss";
+@import "{}/imports/ui/stylesheets/components/hero.scss";
+@import "{}/imports/ui/stylesheets/components/forms.scss";
+@import "{}/imports/ui/stylesheets/components/alerts.scss";
 
 
 
 // pages
-@import "overview-page";
-@import "contact-page";
+@import "{}/imports/ui/stylesheets/components/overview-page.scss";
+@import "{}/imports/ui/stylesheets/components/contact-page.scss";
 

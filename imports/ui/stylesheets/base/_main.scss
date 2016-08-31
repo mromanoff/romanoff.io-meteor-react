@@ -6,14 +6,14 @@
    Imports
    ========================================================================== */
 
-@import 'typography';
-@import 'buttons';
-@import 'forms';
-@import 'images';
-@import 'links';
-@import 'lists';
-@import 'tables';
-@import 'page';
+@import "{}/imports/ui/stylesheets/base/typography.scss";
+@import "{}/imports/ui/stylesheets/base/buttons.scss";
+@import "{}/imports/ui/stylesheets/base/forms.scss";
+@import "{}/imports/ui/stylesheets/base/images.scss";
+@import "{}/imports/ui/stylesheets/base/links.scss";
+@import "{}/imports/ui/stylesheets/base/lists.scss";
+@import "{}/imports/ui/stylesheets/base/tables.scss";
+@import "{}/imports/ui/stylesheets/base/page.scss";
 
 
 

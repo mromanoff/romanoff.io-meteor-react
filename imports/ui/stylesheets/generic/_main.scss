@@ -6,8 +6,8 @@
    Imports
    ========================================================================== */
 
-@import "normalize";
-@import "box-sizing";
-@import "reset";
-@import "root";
+@import "{}/imports/ui/stylesheets/generic/normalize.scss";
+@import "{}/imports/ui/stylesheets/generic/box-sizing.scss";
+@import "{}/imports/ui/stylesheets/generic/reset.scss";
+@import "{}/imports/ui/stylesheets/generic/root.scss";
 

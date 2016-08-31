@@ -6,13 +6,12 @@
    Imports
    ========================================================================== */
 
-@import "global";
-@import "breakpoints";
-@import "colors";
-//@import "grid";
-@import "misc";
-@import "typography";
-@import "widths";
+@import "{}/imports/ui/stylesheets/settings/global.scss";
+@import "{}/imports/ui/stylesheets/settings/breakpoints.scss";
+@import "{}/imports/ui/stylesheets/settings/colors.scss";
+@import "{}/imports/ui/stylesheets/settings/misc.scss";
+@import "{}/imports/ui/stylesheets/settings/typography.scss";
+@import "{}/imports/ui/stylesheets/settings/widths.scss";
 
-@import "fonts";
-@import "icons";
+@import "{}/imports/ui/stylesheets/settings/fonts.scss";
+@import "{}/imports/ui/stylesheets/settings/icons.scss";
