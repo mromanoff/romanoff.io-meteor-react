@@ -1,0 +1,60 @@
+/**
+ * components/_buttons.scss
+ */
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.button-container {
+  padding: $padding-lg 0;
+
+  @include modifier('centered') {
+    text-align: center;
+  }
+}
+
+
+.btn {
+  $button-transition: background, color;
+  @include transition($button-transition);
+
+  border: 1px solid;
+  padding: $padding-md $padding-lg;
+  font-size: $font-md;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  @include modifier('primary') {
+    border-color: $color-primary-btn-background;
+    background: $color-primary-btn-background;
+    color: $color-gray-darker;
+
+    &:hover {
+      background-color: rgba(255, 160, 0, .8);
+    }
+  }
+
+  @include modifier('secondary') {
+    border-color: $color-gray-darker;
+    background: $color-white;
+    color: $color-gray-darker;
+  }
+
+  @include modifier('tertiary') {
+    border-color: $color-gray-darker;
+    background: $color-gray-darker;
+    color: $color-white;
+  }
+
+  @include modifier('sm') {
+    font-size: $font-sm;
+    padding: $padding-sm $padding-md;
+  }
+
+  @include modifier('inline-block') {
+    display: inline-block;
+  }
+}

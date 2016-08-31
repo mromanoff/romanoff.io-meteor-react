@@ -1,12 +1,4 @@
 import React from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {Meteor} from 'meteor/meteor';
-import {Session} from 'meteor/session'; // XXX: SESSION
-//import { Lists } from '../../api/lists/lists.js';
-//import UserMenu from '../components/UserMenu.jsx';
-//import ListList from '../components/ListList.jsx';
-//import ConnectionNotification from '../components/ConnectionNotification.jsx';
-//import Loading from '../components/Loading.jsx';
 
 import {Link} from 'react-router';
 import AccountsUIWrapper from '../containers/AccountsUIWrapper.jsx';
@@ -15,9 +7,7 @@ export default class App extends React.Component {
 
     render() {
 
-        const {
-            children
-        } = this.props;
+        const {children} = this.props;
 
         return (
             <div className="application">
@@ -58,16 +48,7 @@ export default class App extends React.Component {
     }
 }
 
-App.propTypes = {
-    //  user: React.PropTypes.object,      // current meteor user
-    //  connected: React.PropTypes.bool,   // server connection status
-    //  loading: React.PropTypes.bool,     // subscription status
-    //  menuOpen: React.PropTypes.bool,    // is side menu open?
-    //  lists: React.PropTypes.array,      // all lists visible to the current user
-    //  children: React.PropTypes.element, // matched child route component
-    //  location: React.PropTypes.object,  // current router location
-    // params: React.PropTypes.object,    // parameters of the current route
-};
+App.propTypes = {};
 
 App.contextTypes = {
     router: React.PropTypes.object,

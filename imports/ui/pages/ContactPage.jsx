@@ -56,25 +56,25 @@ export default class ContactPage extends Component {
                         <h5>Or introduce yourself</h5>
                         <h3>Hello! My name is</h3>
                         <div className="form-group">
-                            <label className="display--hidden--visually" for="firstName">First Name</label>
+                            <label className="display--hidden--visually" htmlFor="firstName">First Name</label>
                             <input id="firstName"
                                    name="firstName"
                                    ref="firstName"
                                    className="first-name"
                                    type="text"
-                                   maxlength="15"
+                                   maxLength="15"
                                    placeholder="First Name"/>
                             <span className="message--error"></span>
                         </div>
 
                         <div className="form-group">
-                            <label className="display--hidden--visually" for="lastName">Last Name</label>
+                            <label className="display--hidden--visually" htmlFor="lastName">Last Name</label>
                             <input id="lastName"
                                    name="lastName"
                                    ref="lastName"
                                    className="last-name"
                                    type="text"
-                                   maxlength="15"
+                                   maxLength="15"
                                    placeholder="Last Name"/>
                             <span className="message--error"></span>
                         </div>
@@ -82,12 +82,12 @@ export default class ContactPage extends Component {
                         <h5>Please contact me</h5>
 
                         <div className="form-group">
-                            <label className="display--hidden--visually" for="email">Email</label>
+                            <label className="display--hidden--visually" htmlFor="email">Email</label>
                             <input id="email"
                                    ref="email"
                                    name="email"
                                    type="email"
-                                   maxlength="50"
+                                   maxLength="50"
                                    placeholder="Email Address"/>
                             <span className="message--error"></span>
                         </div>

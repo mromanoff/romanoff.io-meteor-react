@@ -43,8 +43,9 @@ mobile-experience@1.0.4
 chriswessels:hammer
 
 # production
-juliancwirko:postcss@1.0.0-beta.11
-standard-minifier-js@1.2.0
+###juliancwirko:postcss@1.0.0-beta.11 remove this if you use Autoprefixer
+###standard-minifier-js@1.2.0   remove this if you use Autoprefixer
+seba:minifiers-autoprefixer
 ddp-rate-limiter@1.0.5
 ## app-prod-security
 
@@ -69,3 +70,4 @@ meteortoys:allthings@2.0.0
 ##autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 ##insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 
+fourseven:scss
