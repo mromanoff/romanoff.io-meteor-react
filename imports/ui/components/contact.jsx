@@ -8,14 +8,17 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <li className="contacts__item">
-                <button className="btn--delete" onClick={this.deleteContact.bind(this)}>
+            <li className="contacts__item list-unstyled margin-vertical--lg">
+                <div>
+                    <div><strong>First Name:</strong> {this.props.contact.firstName}</div>
+                    <div><strong>First Name:</strong> {this.props.contact.lastName}</div>
+                    <div><strong>Email:</strong> {this.props.contact.email}</div>
+                    <div><strong>Comment:</strong> {this.props.contact.comment}</div>
+                </div>
+                <button type="button" className="btn btn--tertiary btn--sm margin-right--md float--right"
+                        onClick={this.deleteContact.bind(this)}>
                     &times;
                 </button>
-                First Name: {this.props.contact.firstName}
-                First Name: {this.props.contact.lastName}
-                Email: {this.props.contact.email}
-                Comment: {this.props.contact.comment}
             </li>
         )
     }
